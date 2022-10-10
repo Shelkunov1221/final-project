@@ -7,9 +7,9 @@
       <title>Blanchard</title>
       <link rel="icon" href="/img/favicon.svg">
       <link rel="stylesheet" href="/css/normalize.css">
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-      <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
       <link rel="stylesheet" href="css/choices.min.css">
       <link rel="stylesheet" href="/css/style.css">
@@ -22,16 +22,16 @@
                <span class="burger__line"></span>
                </button>
                <a class="logo logo-top">
-               <img src="img/logo.png" alt="логотип художественной галереи Бланчард">
+               <img class="logo__img" src="img/logo.png" alt="логотип художественной галереи Бланчард">
                </a>
                <nav class="header__nav nav" data-nav>
                   <ul class="nav__list list-reset">
-                     <li class="nav__item"><a href="#" class="nav__link">О&nbsp;нас</a></li>
-                     <li class="nav__item"><a href="#" class="nav__link">Галерея</a></li>
-                     <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
-                     <li class="nav__item"><a href="#" class="nav__link">События</a></li>
-                     <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
-                     <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                     <li class="nav__item"><a href="#about" class="nav__link">О&nbsp;нас</a></li>
+                     <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+                     <li class="nav__item"><a  href="#catalog" class="nav__link">Каталог</a></li>
+                     <li class="nav__item"><a href="#developments" class="nav__link">События</a></li>
+                     <li class="nav__item"><a href="#projects" class="nav__link">Проекты</a></li>
+                     <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
                   </ul>
                   <a href="#" class="header__link">
                      <svg class="header__link-icon" width="13" height="13" viewbox="0 0 13 13" fill="none"
@@ -253,13 +253,13 @@
                      </select>
                      <div class="radio-button">
                         <label class="period">
-                        <input type="radio" name="period" value="XIX век"><span>XIX век</span>
+                        <input type="radio" tabindex="0" name="period" value="XIX век"><span>XIX век</span>
                         </label>
                         <label class="period">
-                        <input type="radio" name="period" value="XX век"><span>XX век</span>
+                        <input type="radio" tabindex="0" name="period" value="XX век"><span>XX век</span>
                         </label>
                         <label class="period">
-                        <input type="radio" name="period" value="Современность"><span>Современность</span>
+                        <input type="radio" tabindex="0" name="period" value="Современность"><span>Современность</span>
                         </label>
                      </div>
                   </div>
@@ -360,31 +360,7 @@
                            времени).
                         </div>
                      </div>
-                     <div class="tab-content" data-target="one">
-                        <img class="catalog-image" src="img/x-autor.jpg" alt="">
-                        <h3 class="autor">Что мы о нем знаем?</h3>
-                        <div class="autor-descr text">Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть
-                           на&nbsp;что посмотреть!
-                        </div>
-                        <a href="gallery" class="tab-content-link">В галерею</a>
-                     </div>
-                     <div class="tab-content" data-target="two">
-                        <img class="catalog-image" src="img/x-autor.jpg" alt="">
-                        <h3 class="autor">Что мы о нем знаем?</h3>
-                        <div class="autor-descr text">Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть
-                           на&nbsp;что посмотреть!
-                        </div>
-                        <a href="gallery" class="tab-content-link">В галерею</a>
-                     </div>
-                     <div class="tab-content" data-target="three">
-                        <img class="catalog-image" src="img/x-autor.jpg" alt="">
-                        <h3 class="autor">Что мы о нем знаем?</h3>
-                        <div class="autor-descr text">Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть
-                           на&nbsp;что посмотреть!
-                        </div>
-                        <a href="gallery" class="tab-content-link">В галерею</a>
-                     </div>
-                     <div class="tab-content" data-target="four">
+                     <div class="tab-content" data-target="another">
                         <img class="catalog-image" src="img/x-autor.jpg" alt="">
                         <h3 class="autor">Что мы о нем знаем?</h3>
                         <div class="autor-descr text">Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть
@@ -407,57 +383,57 @@
                            <div class="content">
                               <div class="content__wraper">
                                  <ul class="content__list list-reset">
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="one">Бенедетто&nbsp;
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Бенедетто&nbsp;
                                        ди&nbsp;Биндо</button>
                                     </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="two">Бергоньоне,&nbsp;Амброджо</button>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Бергоньоне,&nbsp;Амброджо</button>
                                     </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="three">Биссоло,&nbsp;
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Биссоло,&nbsp;
                                        Франческо</button>
                                     </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="four">Больтраффио,&nbsp;Джованни</button>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Больтраффио,&nbsp;Джованни</button>
                                     </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="five">Бонсиньори,&nbsp;Франческо</button>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Бонсиньори,&nbsp;Франческо</button>
                                     </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="six">Боттичини,&nbsp;Рафаэлло</button>
-                                    </li>
-                                    <li class="content__item"><button class="content__btn btn-reset"
-                                       data-path="seven">Брамантино</button></li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="eight">Бреа,&nbsp;Людовико</button>
-                                    </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="nine">Бьяджо&nbsp;д&rsquo;Антонио&nbsp;Туччи</button>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Боттичини,&nbsp;Рафаэлло</button>
                                     </li>
                                     <li class="content__item"><button class="content__btn btn-reset"
-                                       data-path="ten">Веккьетта</button></li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="eleven">Андреа&nbsp;Верроккьо</button>
+                                       data-path="another">Брамантино</button></li>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Бреа,&nbsp;Людовико</button>
+                                    </li>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Бьяджо&nbsp;д&rsquo;Антонио&nbsp;Туччи</button>
+                                    </li>
+                                    <li class="content__item"><button class="content__btn btn-reset"
+                                       data-path="another">Веккьетта</button></li>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Андреа&nbsp;Верроккьо</button>
                                     </li>
                                     <li class="content__item"><button class="content__btn btn-reset content__btn--active"
                                        data-path="twelve">Доменико&nbsp;Гирландайо</button>
                                     </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="thirteen">Беноццо&nbsp;Гоццоли</button>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Беноццо&nbsp;Гоццоли</button>
                                     </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="fourteen">Граначчи,&nbsp;Франческо</button>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Граначчи,&nbsp;Франческо</button>
                                     </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="fifteen">Грегорио&nbsp;ди&nbsp;Чекко</button>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Грегорио&nbsp;ди&nbsp;Чекко</button>
                                     </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="sixteen">Джованни&nbsp;да&nbsp;Удине</button>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Джованни&nbsp;да&nbsp;Удине</button>
                                     </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="seventeen">Джованни&nbsp;ди&nbsp;Паоло</button>
-                                    </li>
-                                    <li class="content__item"><button class="content__btn btn-reset"
-                                       data-path="eighteen">Джорджоне</button></li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="nineteen">Парентино,&nbsp;Бернардо</button>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Джованни&nbsp;ди&nbsp;Паоло</button>
                                     </li>
                                     <li class="content__item"><button class="content__btn btn-reset"
-                                       data-path="twenty">Пезеллино</button></li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="twenty one">Пьетро&nbsp;Перуджино</button>
-                                    </li>
-                                    <li class="content__item"><button class="content__btn btn-reset" data-path="twenty two">Перуцци,&nbsp;Бальдассаре</button>
+                                       data-path="another">Джорджоне</button></li>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Парентино,&nbsp;Бернардо</button>
                                     </li>
                                     <li class="content__item"><button class="content__btn btn-reset"
-                                       data-path="twenty three">Пизанелло</button></li>
+                                       data-path="another">Пезеллино</button></li>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Пьетро&nbsp;Перуджино</button>
+                                    </li>
+                                    <li class="content__item"><button class="content__btn btn-reset" data-path="another">Перуцци,&nbsp;Бальдассаре</button>
+                                    </li>
                                     <li class="content__item"><button class="content__btn btn-reset"
-                                       data-path="twenty five">Пинтуриккьо</button></li>
+                                       data-path="another">Пизанелло</button></li>
+                                    <li class="content__item"><button class="content__btn btn-reset"
+                                       data-path="another">Пинтуриккьо</button></li>
                                  </ul>
                               </div>
                            </div>
@@ -782,9 +758,9 @@
                      предпосылок. Банальные, но&nbsp;неопровержимые выводы,
                      а&nbsp;также представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые,
                      в&nbsp;свою очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой
-                     неузнаваемости.&nbsp;Подробнее:<a tabindex="0" class="projects-link">blanchard-art.ru/projects</a>
+                     неузнаваемости.&nbsp;Подробнее: <a tabindex="0" class="projects-link">blanchard-art.ru/projects</a>
                   </div>
-               </div>F
+               </div>
                <div class="partners">
                   <h3 class="partners-title">Партнёры проектов:</h3>
                   <div class="swiper-box">
@@ -849,7 +825,7 @@
                            <input class="input input-tel" name="tel" type="tel" required="" placeholder="Телефон*" data-validate-field="tel"
                               data-validate-rules="phone">
                         </div>
-                        <div class="form-group form-group--btn">
+                        <div class="form-group form-group--btn" tabindex="0">
                            <button  aria-label="Заказать обратный звонок" class="btn-reset btn-form">
                              <span class="notmobile">Заказать обратный звонок</span>
                              <span class="mobile">Заказать</span>
@@ -929,7 +905,7 @@
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script src="js/inputmask.min.js"></script>
       <script src="js/validation.js"></script>
-      <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
       <script src="js/index.js"></script>
    </body>
 </html>

@@ -75,7 +75,6 @@ const swiper = new Swiper('.swiper', {
   // Default parameters
   slidesPerView: 1,
   spaceBetween: 10,
-  autoHeight: true,
   speed: 2000,
   autoplay: {
     delay: 2000
@@ -100,8 +99,6 @@ const choices = new Choices(element, {
   searchEnabled: false,
   shouldSort: false
 });
-
-
 
 // swiper-gallery
 document.addEventListener("DOMContentLoaded", () => {
@@ -451,6 +448,7 @@ var selector = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7 (999) 999-99-99");
 
 im.mask(selector);
+
 
 
 
