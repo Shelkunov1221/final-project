@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'OpenSans';
-	src: url(../fonts/OpenSansBold.woff2) format('woff2');
+	src: url('../fonts/OpenSansBold.woff2') format('woff2');
 	font-display: swap;
 	font-weight: 700;
 	font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
 	font-family: 'OpenSans';
-	src: url(../fonts/OpenSansSemiBold.woff2) format('woff2');
+	src: url('../fonts/OpenSansSemiBold.woff2') format('woff2');
 	font-display: swap;
 	font-weight: 600;
 	font-style: normal;
@@ -16,7 +16,7 @@
 
 @font-face {
 	font-family: 'OpenSans';
-	src: url(../fonts/OpenSansRegular.woff2) format('woff2');
+	src: url('../fonts/OpenSansRegular.woff2') format('woff2');
 	font-display: swap;
 	font-weight: 400;
 	font-style: normal;
@@ -24,7 +24,7 @@
 
 @font-face {
 	font-family: 'OpenSans';
-	src: url(../fonts/OpenSansItalic.woff2) format('woff2');
+	src: url('../fonts/OpenSansItalic.woff2') format('woff2');
 	font-display: swap;
 	font-weight: 300;
 	font-style: normal;
@@ -101,7 +101,7 @@ img {
 }
 
 .title {
-	font-family: 'Open Sans';
+	font-family: 'OpenSans';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 48px;
@@ -112,7 +112,7 @@ img {
 
 .text {
 	display: inline;
-	font-family: 'Open Sans';
+	font-family: 'OpenSans';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -795,7 +795,13 @@ body {
 	top: 36%;
 	right: 15px;
 	transform: rotate(45deg);
+  transition-duration: .2s;
 }
+
+.choices[data-type*=select-one].is-open::before {
+  transform: rotate(225deg);
+}
+
 
 .choices[data-type*=select-one]:focus {
 	background-color: #999999;
@@ -1137,7 +1143,7 @@ body {
 }
 
 .accordion__btn-text {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -1267,7 +1273,7 @@ body {
 }
 
 .content__btn {
-	font-family: 'Open Sans';
+	font-family: 'OpenSans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1846,7 +1852,7 @@ body {
 	background: transparent;
 	border: 1px solid #333333;
 	border-radius: 30px;
-	font-family: 'Open Sans';
+	font-family: 'OpenSans';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -1866,7 +1872,7 @@ body {
 	border: 2px solid #9D5CD0;
 	color: #9D5CD0;
 	border-radius: 100px;
-	font-family: 'Open Sans';
+	font-family: 'OpenSans';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 19px;
@@ -1915,7 +1921,7 @@ body {
 	position: absolute;
 	top: -8px;
 	left: 24px;
-	font-family: 'Open Sans';
+	font-family: 'OpenSans';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 12px;
@@ -2470,6 +2476,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hero__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+
   .js-validate-error-label {
     top: 4px;
   }
@@ -2513,7 +2525,7 @@ body {
 	transform: rotate(45deg);
 }
 
-.burger--active::after {
+  .burger--active::after {
 	bottom: auto;
 	top: 50%;
 	width: 100%;
@@ -2537,12 +2549,6 @@ body {
   .hero {
     padding-top: 75px;
 	padding-bottom: 44px;
-  }
-
-  .hero__content {
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
   }
 
   .hero__title {
