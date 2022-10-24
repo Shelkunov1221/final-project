@@ -911,7 +911,6 @@ body {
 	color: #373850;
 }
 
-/* не работают цыфры пагинации */
 .gallery-pagination span {
 	font-weight: 400;
 	font-size: 16px;
@@ -1683,7 +1682,6 @@ body {
 	margin-bottom: 20px;
 }
 
-
 /* partners */
 .partners-title {
 	font-weight: 600;
@@ -1974,7 +1972,6 @@ body {
 	border: 1px solid #9D5CD0;
 	border-radius: 100%;
 }
-
 
 /* map */
 .map {
@@ -2520,17 +2517,17 @@ body {
   }
 
   .burger--active::before {
-	top: 50%;
-	width: 100%;
-	transform: rotate(45deg);
-}
+    top: 50%;
+    width: 100%;
+    transform: rotate(45deg);
+  }
 
   .burger--active::after {
-	bottom: auto;
-	top: 50%;
-	width: 100%;
-	transform: rotate(-45deg);
-}
+    bottom: auto;
+    top: 50%;
+    width: 100%;
+    transform: rotate(-45deg);
+  }
 
   .logo-top {
     width: 96px;
@@ -2543,12 +2540,12 @@ body {
   }
 
   .form-search {
-	width: 95%;
+  	width: 95%;
   }
 
   .hero {
     padding-top: 75px;
-	padding-bottom: 44px;
+	  padding-bottom: 44px;
   }
 
   .hero__title {
@@ -2564,12 +2561,12 @@ body {
     font-size: 12px;
     line-height: 16px;
     margin-bottom: 42px;
-	padding: 0 9px;
+	  padding: 0 9px;
   }
 
   .hero__btn {
-	display: inline-block;
-	align-items: center;
+    display: inline-block;
+    align-items: center;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -2580,14 +2577,14 @@ body {
 
   .about {
     padding-top: 50px;
-	padding-bottom: 41px;
+	  padding-bottom: 41px;
   }
 
   .title {
     font-weight: 400;
-	font-size: 28px;
-	line-height: 38px;
-	margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 12px;
   }
 
   .text {
@@ -2888,7 +2885,6 @@ body {
   .footer__list{
     margin-bottom: 16px;
   }
-
 }
 
 
